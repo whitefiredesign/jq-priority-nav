@@ -45,7 +45,7 @@
             /**
              * Gets all of the navigation elements
              */
-            this.allNavElements = $("." + $this.menuClasses + " > ul > li:not('." + settings.overflowClass+"')");
+            this.allNavElements = _elem.find(" > ul > li:not('." + settings.overflowClass+"')");
 
             /**
              * Overflow wrapper el
@@ -79,7 +79,7 @@
             this.setupMenu = function() {
                 
                 // Checking top position of first item (sometimes changes)
-                var firstPos = $("." + $this.menuClasses + " > ul > li:first").position();
+                var firstPos = _elem.find(" > ul > li:first").position();
 
                 // Empty collection in which to put menu items to move
                 var wrappedElements = $();

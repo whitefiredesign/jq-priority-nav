@@ -3,5 +3,17 @@
   "version": "0.1.0",
   "description": "A priority + navigation plugin inspired by DIY Priority + Navigation - https://css-tricks.com/diy-priority-plus-nav/",
   "author": "Joe Buckle <joe@white-fire.co.uk>",
-  "license": "MIT"
+  "license": "MIT",
+  "homepage": "https://github.com/whitefiredesign/jq-priority-nav",
+  "authors": [
+    "bambattajb <joe@white-fire.co.uk>"
+  ],
+  "main": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }
