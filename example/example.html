@@ -1,0 +1,97 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="../dist/jq-priority-nav.min.js"></script>
+<script>
+$(function() {
+    $('.priority-plus').priorityPlus({
+        overflowClass       : 'overflow-nav',           // Overall Wrapper
+        overflowTitleClass  : 'overflow-nav-title',     // Icon or Text for open / close nav
+        overflowListClass   : 'overflow-nav-list'       // The nav list item UL class
+    });
+});
+</script>
+<style type="text/css">
+.priority-plus > ul > li {
+ display:inline-block;
+ position:relative; 
+}
+
+.priority-plus > ul > li.overflow-nav {
+  display:none;
+}
+
+.overflow-nav {
+  display:none;
+}
+
+.overflow-nav-list {
+  background: white;
+  position: absolute;
+  top: 95%; // moves to 100% on hover generally
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  width: 150px;
+  z-index: 1;
+  right: -20px;
+}
+
+.overflow-nav-list.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.overflow-nav-title {
+  cursor: pointer;
+  text-align: center;
+  color: #222;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.overflow-nav-title:before {
+ content:"▼";
+ font-size:20px;	
+}
+
+.hide {
+  display: none !important;
+}
+
+.show-inline-block {
+  display: inline-block !important;
+
+}
+
+.resizing {
+ overflow: hidden;
+}
+</style>
+
+</head>
+<body>
+<nav role="navigation" class="priority-plus">
+    <ul>
+        <li><a href="">Link 1</a></li>
+        <li><a href="">Link 2</a></li>
+        <li><a href="">Link 3</a></li>
+        <li><a href="">Link 4</a></li>
+        <li><a href="">Link 5</a></li>
+        <li><a href="">Link 6</a></li>
+        <li><a href="">Link 7</a></li>
+        <li><a href="">Link 8</a></li>
+        <li><a href="">Link 9</a></li>
+        <li><a href="">Link 10</a></li>
+        <li><a href="">Link 11</a></li>
+        <li><a href="">Link 12</a></li>
+        <li class="overflow-nav">
+            <span class="overflow-nav-title"></span>
+            <ul class="overflow-nav-list">
+                <!-- OVERFLOW GOES IN HERE -->
+            </ul>
+        </li>
+    </ul>
+</nav>
+</body>
+</html>
