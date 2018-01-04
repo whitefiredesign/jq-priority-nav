@@ -4,7 +4,7 @@
 ## Install
 ### There is a bower package
 ```javascript
-bower install jq-priority-plus
+bower install jq-priority-nav
 ```
 
 ## To initialise (set arguments are defaults)
