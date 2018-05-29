@@ -1,0 +1,11 @@
+{
+  "name": "jq-priority-nav",
+  "version": "0.0.2",
+  "description": "inspired by DIY Priority + Navigation - https://css-tricks.com/diy-priority-plus-nav/",
+  "author": "Joe Buckle <joe@white-fire.co.uk>",
+  "license": "MIT",
+
+  "devDependencies": {
+
+  }
+}
